@@ -54,6 +54,6 @@ to view the status you can run type:
 ```sw --status```
 
 ## Contributing
-Of course contributions are welcome! I know this is a simple code, so I welcome any of you to modify to make it better. 
+Please feel free to modify and any contributions are appreciated.  
 
 
