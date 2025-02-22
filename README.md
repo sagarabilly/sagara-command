@@ -25,8 +25,8 @@ git clone https://github.com/sagarabilly/sagara-command.git
 ```
 And add the bin folder path to your system or user path environment variables.  
 
-If you dont know how to add it (or a noob programmer like me lol), follow these steps:  
-1. Press Win + R key on your keyboard and type sysdm.cpl, and hit Ok.    
+If you dont know how to add it, follow these steps:  
+1. Press Win + R key on your keyboard and type ```sysdm.cpl```, and hit Ok.    
 2. Head over to "Advanced" tab and click "Environmnet Variables"  
 3. Click the "Path" at variable column on your user variables or system variables (depending on your choice whether to use it for all user or just for you) and click "Edit".  
 4. Click "New", and add the bin folder path and hit OK.  
