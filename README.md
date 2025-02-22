@@ -15,7 +15,8 @@ I use these commands quite often and are quite useful for both work or daily usa
 
 Before using, please make sure:
 - You are running Windows 10 or more. These commands are intended for Windows operating system. if you are running Windows 10, make sure you have winget installed in your system for ies command. Although, I dont recommend to use it just yet, since it is still currently being developed.  
-- You have python installed on your system. it is required for sagaracrypt, sw, sysmon, and srename. All the modules used are python base modules, so it should already be installed along with it.   
+- You have python installed on your system. it is required for sagaracrypt, sw, sysmon, and srename. All the modules used are python base modules except for srename. You need to install pandas by running ```pip install pandas``` on your system.  
+All other python modules should already be already installed along with the python base installation.   
 
 ## Setup / Installation  
 
