@@ -4,8 +4,6 @@ TYPE : COMMAND LINE
 ----------SERVER SYSTEM----------
 ------CONFIG & STATUS CHECK------
 =----64Bit UTF08 PYTHON 3.12----=
-
-----------BILLY SAGARA-----------
 """
 
 import os
