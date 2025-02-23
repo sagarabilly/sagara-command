@@ -2,8 +2,6 @@
 ------Simple Rename------
 ------PYTHON 3.11.5------
 ----------UTF-08---------
-
-SAGARA - 241014
 """
 
 import os
