@@ -10,6 +10,7 @@ I use these commands quite often and are quite useful for both work or daily usa
 - **System Monitor (sysmon):** Quickly dsplay your system status: memory, cpu, disk, boot uptime, and more.  
 - **Sagara Rename (srename):** Quicky rename all the files based on a list or csv or text or even mimicking other folder.  
 - **Install Engine Setup (ies) [Still under development!]:** Automation powershell script to install and setup some programs automatically. 
+- **Sagara Webnote (webnote):** Displaying ypur markdown text note in a form of html with my pre-applied css design and deploy it locally (currently set to port 9995)
 
 ## Requirements  
 
@@ -17,6 +18,7 @@ Before using, please make sure:
 - You are running Windows 10 or more. These commands are intended for Windows operating system. if you are running Windows 10, make sure you have winget installed in your system for ies command. Although, I dont recommend to use it just yet, since it is still currently being developed.  
 - You have python installed on your system. it is required for sagaracrypt, sw, sysmon, and srename. All the modules used are python base modules except for srename. You need to install pandas by running ```pip install pandas``` on your system.  
 All other python modules should already be already installed along with the python base installation.   
+- For the use of webnote, you have to have Pandoc installed on your system [https://pandoc.org/](https://pandoc.org/)  
 
 ## Setup / Installation  
 
