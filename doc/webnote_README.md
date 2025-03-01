@@ -3,7 +3,7 @@
 
 WebNote is a simple utility that converts Markdown files to HTML using Pandoc and immediately serves the generated HTML via a Python HTTP server. It is ideal for quickly previewing styled Markdown notes in your browser.  
 
-Screenshot (text loren_ipsum generated randomly):
+Screenshot: (text loren_ipsum generated randomly)
 ![Alt text](../src/sagarawebnote/screenshots/jcontents.png)  
 
 ## Overview
