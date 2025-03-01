@@ -33,7 +33,7 @@ If you dont know how to add it, follow these steps:
 2. Head over to "Advanced" tab and click "Environmnet Variables"  
 3. Click the "Path" at variable column on your user variables or system variables (depending on your choice whether to use it for all user or just for you) and click "Edit".  
 4. Click "New", and add the bin folder path and hit OK.  
-5. relaunch your terminal or cmd,  and it should be good to go. You can confirm it by entering command "where" followed by the command. example: ```where sw``` and it should display where the 
+5. relaunch your terminal or cmd,  and it should be good to go. You can confirm it by entering command "where" followed by the command name. example: ```where sw``` and it should display where the command bat is.
 
 ## Contributing
 Of course, feel free to modify and any contributions are appreciated.  
