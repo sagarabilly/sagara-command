@@ -1,0 +1,230 @@
+/* ===========================
+   Importing Orbitron Font
+============================ */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+/* ===========================
+   Reset and Basic Styling
+============================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Orbitron', sans-serif; /* Retro-futuristic font */
+  color: #ffffff;
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* ===========================
+   Background Video Styling
+============================ */
+.bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -2;
+  transform: translate(-50%, -50%);
+  background-size: cover;
+  object-fit: cover;
+}
+
+/* ===========================
+   Overlay for Darkening Background
+============================ */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Dark overlay for better contrast */
+  z-index: -1;
+}
+
+/* ===========================
+   Animated Grid: One Vertical and One Horizontal Line
+============================ */
+.grid-vertical, .grid-horizontal {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.2);
+  z-index: 1;
+}
+
+.grid-vertical {
+  width: 2px;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: moveGridVertical 10s linear infinite;
+}
+
+.grid-horizontal {
+  height: 2px;
+  width: 100%;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  animation: moveGridHorizontal 10s linear infinite;
+}
+
+@keyframes moveGridVertical {
+  0% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(-20px); }
+  100% { transform: translateX(-50%) translateY(0); }
+}
+
+@keyframes moveGridHorizontal {
+  0% { transform: translateY(-50%) translateX(0); }
+  50% { transform: translateY(-50%) translateX(20px); }
+  100% { transform: translateY(-50%) translateX(0); }
+}
+
+/* ===========================
+   Spinner Styling
+============================ */
+.spinner {
+  position: absolute;
+  bottom: 20px; /* Positioning 20px from bottom */
+  left: 20px;   /* Positioning 20px from left */
+  width: 80px;
+  height: 80px;
+  z-index: 1;
+}
+
+.spinner::before, .spinner::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  margin: -30px;
+  border: 8px solid transparent;
+  border-top-color: #3498db; /* Neon Blue */
+  border-bottom-color: #3498db; /* Neon Blue */
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  box-shadow: 0 0 20px #3498db, 0 0 30px #3498db;
+}
+
+.spinner::after {
+  width: 40px;
+  height: 40px;
+  margin: -20px;
+  border-width: 5px;
+  border-top-color: #2980b9; /* Darker Neon Blue */
+  border-bottom-color: #2980b9; /* Darker Neon Blue */
+  animation: spin 0.5s linear infinite reverse;
+  box-shadow: 0 0 10px #2980b9, 0 0 15px #2980b9;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* ===========================
+   Loading Text Styling with Typewriter Effect
+============================ */
+.loading-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  text-align: center;
+  color: #ffffff;
+  overflow: hidden; /* Ensures the text is clipped */
+  white-space: nowrap; /* Prevents text from wrapping */
+  animation: 
+    typing 3s steps(30, end) forwards, /* Slower typewriter effect */
+    glow 1.5s ease-in-out infinite alternate; /* Increased glow effect */
+  z-index: 1;
+  /* Enhanced Text Glow */
+  text-shadow: 
+    0 0 20px #3498db, 
+    0 0 30px #3498db, 
+    0 0 40px #3498db,
+    0 0 50px #3498db;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 
+      0 0 20px #3498db, 
+      0 0 30px #3498db, 
+      0 0 40px #3498db,
+      0 0 50px #3498db;
+  }
+  to {
+    text-shadow: 
+      0 0 30px #3498db, 
+      0 0 40px #3498db, 
+      0 0 50px #3498db,
+      0 0 60px #3498db;
+  }
+}
+
+/* ===========================
+   Optional: Neon Frame or Border
+============================ */
+.frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 4px solid #ff6ec7;
+  box-sizing: border-box;
+  box-shadow: 0 0 20px #ff6ec7, 0 0 40px #58d68d;
+  pointer-events: none;
+  z-index: 1;
+  animation: pulse 3s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    box-shadow: 0 0 20px #ff6ec7, 0 0 40px #58d68d;
+  }
+  50% {
+    box-shadow: 0 0 30px #ff6ec7, 0 0 60px #58d68d;
+  }
+}
+
+/* ===========================
+   Responsive Adjustments
+============================ */
+@media (max-width: 600px) {
+  .spinner {
+    width: 60px;
+    height: 60px;
+    bottom: 10px;
+    left: 10px;
+  }
+
+  .loading-text {
+    font-size: 1.2rem;
+    /* Adjust text-shadow for smaller screens if needed */
+    text-shadow: 
+      0 0 15px #3498db, 
+      0 0 25px #3498db, 
+      0 0 35px #3498db,
+      0 0 45px #3498db;
+  }
+}

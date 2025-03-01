@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scattered 3D Glass Cubes Animation</title>
+  <style>
+    /* Basic reset and full viewport background */
+    body {
+      margin: 0;
+      background: #111;
+      overflow: hidden;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    /* Container with perspective for 3D effect */
+    .container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      perspective: 1000px;
+    }
+    /* Base style for each cube */
+    .cube {
+      position: absolute;
+      width: 120px;
+      height: 120px;
+      transform-style: preserve-3d;
+      animation: moveAndSpinCube 20s ease-in-out infinite;
+    }
+    /* Each face of the cube */
+    .cube .face {
+      position: absolute;
+      width: 120px;
+      height: 120px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid var(--color);
+      box-shadow: 0 0 20px var(--color);
+      backdrop-filter: blur(10px);
+    }
+    /* Positioning each face in 3D space */
+    .cube .face.front  { transform: rotateY(0deg)   translateZ(60px); }
+    .cube .face.back   { transform: rotateY(180deg) translateZ(60px); }
+    .cube .face.right  { transform: rotateY(90deg)  translateZ(60px); }
+    .cube .face.left   { transform: rotateY(-90deg) translateZ(60px); }
+    .cube .face.top    { transform: rotateX(90deg)  translateZ(60px); }
+    .cube .face.bottom { transform: rotateX(-90deg) translateZ(60px); }
+
+    /* Combined keyframes for both movement and 3D spin */
+    @keyframes moveAndSpinCube {
+      0%   { transform: translate(0, 0)      rotateX(0deg)   rotateY(0deg)   rotateZ(0deg); }
+      20%  { transform: translate(100px, -80px) rotateX(90deg)  rotateY(45deg)  rotateZ(180deg); }
+      40%  { transform: translate(-120px, 100px)rotateX(180deg) rotateY(90deg)  rotateZ(360deg); }
+      60%  { transform: translate(80px, -120px) rotateX(270deg) rotateY(135deg) rotateZ(540deg); }
+      80%  { transform: translate(-100px, 80px) rotateX(360deg) rotateY(180deg) rotateZ(720deg); }
+      100% { transform: translate(0, 0)      rotateX(450deg) rotateY(225deg) rotateZ(900deg); }
+    }
+
+    /* Individual cube positions and durations for a scattered effect */
+    /* Red cubes */
+    .cube:nth-child(1) {
+      --color: rgba(255, 0, 0, 0.7);
+      top: 5%;
+      left: 15%;
+      animation-duration: 22s;
+    }
+    .cube:nth-child(2) {
+      --color: rgba(255, 0, 0, 0.7);
+      top: 80%;
+      left: 80%;
+      animation-duration: 23s;
+    }
+    /* Green cubes */
+    .cube:nth-child(3) {
+      --color: rgba(0, 255, 0, 0.7);
+      top: 20%;
+      left: 70%;
+      animation-duration: 24s;
+    }
+    .cube:nth-child(4) {
+      --color: rgba(0, 255, 0, 0.7);
+      top: 65%;
+      left: 20%;
+      animation-duration: 25s;
+    }
+    /* Blue cubes */
+    .cube:nth-child(5) {
+      --color: rgba(0, 0, 255, 0.7);
+      top: 45%;
+      left: 30%;
+      animation-duration: 26s;
+    }
+    .cube:nth-child(6) {
+      --color: rgba(0, 0, 255, 0.7);
+      top: 30%;
+      left: 85%;
+      animation-duration: 27s;
+    }
+    /* Yellow cubes */
+    .cube:nth-child(7) {
+      --color: rgba(255, 255, 0, 0.7);
+      top: 55%;
+      left: 55%;
+      animation-duration: 28s;
+    }
+    .cube:nth-child(8) {
+      --color: rgba(255, 255, 0, 0.7);
+      top: 10%;
+      left: 80%;
+      animation-duration: 29s;
+    }
+    /* Cyan cubes */
+    .cube:nth-child(9) {
+      --color: rgba(0, 255, 255, 0.7);
+      top: 75%;
+      left: 35%;
+      animation-duration: 30s;
+    }
+    .cube:nth-child(10) {
+      --color: rgba(0, 255, 255, 0.7);
+      top: 40%;
+      left: 5%;
+      animation-duration: 31s;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Red Cubes -->
+    <div class="cube">
+      <div class="face front"></div>
+      <div class="face back"></div>
+      <div class="face right"></div>
+      <div class="face left"></div>
+      <div class="face top"></div>
+      <div class="face bottom"></div>
+    </div>
+    <div class="cube">
+      <div class="face front"></div>
+      <div class="face back"></div>
+      <div class="face right"></div>
+      <div class="face left"></div>
+      <div class="face top"></div>
+      <div class="face bottom"></div>
+    </div>
+
+    <!-- Green Cubes -->
+    <div class="cube">
+      <div class="face front"></div>
+      <div class="face back"></div>
+      <div class="face right"></div>
+      <div class="face left"></div>
+      <div class="face top"></div>
+      <div class="face bottom"></div>
+    </div>
+    <div class="cube">
+      <div class="face front"></div>
+      <div class="face back"></div>
+      <div class="face right"></div>
+      <div class="face left"></div>
+      <div class="face top"></div>
+      <div class="face bottom"></div>
+    </div>
+
+    <!-- Blue Cubes -->
+    <div class="cube">
+      <div class="face front"></div>
+      <div class="face back"></div>
+      <div class="face right"></div>
+      <div class="face left"></div>
+      <div class="face top"></div>
+      <div class="face bottom"></div>
+    </div>
+    <div class="cube">
+      <div class="face front"></div>
+      <div class="face back"></div>
+      <div class="face right"></div>
+      <div class="face left"></div>
+      <div class="face top"></div>
+      <div class="face bottom"></div>
+    </div>
+
+    <!-- Yellow Cubes -->
+    <div class="cube">
+      <div class="face front"></div>
+      <div class="face back"></div>
+      <div class="face right"></div>
+      <div class="face left"></div>
+      <div class="face top"></div>
+      <div class="face bottom"></div>
+    </div>
+    <div class="cube">
+      <div class="face front"></div>
+      <div class="face back"></div>
+      <div class="face right"></div>
+      <div class="face left"></div>
+      <div class="face top"></div>
+      <div class="face bottom"></div>
+    </div>
+
+    <!-- Cyan Cubes -->
+    <div class="cube">
+      <div class="face front"></div>
+      <div class="face back"></div>
+      <div class="face right"></div>
+      <div class="face left"></div>
+      <div class="face top"></div>
+      <div class="face bottom"></div>
+    </div>
+    <div class="cube">
+      <div class="face front"></div>
+      <div class="face back"></div>
+      <div class="face right"></div>
+      <div class="face left"></div>
+      <div class="face top"></div>
+      <div class="face bottom"></div>
+    </div>
+  </div>
+</body>
+</html>

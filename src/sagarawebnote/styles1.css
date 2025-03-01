@@ -1,0 +1,132 @@
+
+body {
+    background-color: black;
+    color: white;
+    font-family: "Fira Sans";
+	font-weight: bold;
+	text-shadow: 
+        0 0 5px rgba(255, 255, 255, 0.3),  /* Light white glow */
+        0 0 10px rgba(255, 255, 255, 0.3), /* Medium white glow */
+        0 0 15px rgba(255, 255, 255, 0.3), /* Strong white glow */
+        0 0 20px rgba(255, 255, 255, 0.3); /* Very strong white glow */
+}
+
+h1 {
+	margin-top: 1em;
+    color: #00ff00; /* Bright green for retro effect */
+    text-decoration: none; /* Remove underline */
+    text-shadow: 
+        0 0 5px rgba(0, 255, 0, 0.5), /* Glow effect */
+        0 0 10px rgba(0, 255, 0, 0.5), 
+        0 0 15px rgba(0, 255, 0, 0.5);
+    transition: text-shadow 0.3s ease; /* Smooth transition for hover */
+	border-bottom: 1px solid #00ff00; 
+}
+
+h1:hover {
+    text-shadow: 
+        0 0 10px rgba(0, 255, 0, 1), /* Brighten glow on hover */
+        0 0 20px rgba(0, 255, 0, 1), 
+        0 0 30px rgba(0, 255, 0, 1);
+}
+
+h2 {
+	margin-top: 1em;
+    color: #FFD700; 
+	margin-bottom: 0.2em;
+	text-shadow: 
+        0 0 5px rgba(255, 255, 0, 0.5),  /* Light yellow glow */
+        0 0 10px rgba(255, 255, 0, 0.5), /* Medium yellow glow */
+        0 0 15px rgba(255, 255, 0, 0.5), /* Strong yellow glow */
+        0 0 20px rgba(255, 255, 0, 0.5); /* Very strong yellow glow */
+}
+
+h3 {
+	color: orange;
+	text-shadow: 
+        0 0 5px rgba(255, 165, 0, 0.5),  /* Light orange glow */
+        0 0 10px rgba(255, 165, 0, 0.5), /* Medium orange glow */
+        0 0 15px rgba(255, 165, 0, 0.5), /* Strong orange glow */
+        0 0 20px rgba(255, 165, 0, 0.5); /* Very strong orange glow */
+}
+
+code {
+    color: #white; 
+    font-family : 'Consolas';  
+	display: inline-block;
+    border: 1px solid white;
+    border-radius: 2px;
+    background-color: dodgerblue;    
+    padding: 2px 4px;
+	text-shadow: none !important;
+}   
+
+.ex {
+    color: yellow; /* Set font color for 'ex' class */
+}
+
+.at {
+    color: green; /* Set font color for 'at' class */
+}
+
+.st {
+    color: red; /* Set font color for 'st' class */
+}
+
+img {
+    width: 80%;  
+    height: auto; 
+}
+
+.sourceCode {
+    display: inline-block; /* Makes the container fit the content */
+    font-family: monospace; /* Monospace font for code */
+    background-color: black; /* Light background for better readability */
+    padding: 4px; /* Add some padding */
+    border-radius: 5px; /* Round the corners */
+    box-sizing: border-box; /* Include padding in width/height calculations */
+}
+
+a {
+    color: turquoise; 
+	text-decoration: underline;
+}
+
+p{
+	font-family: "monospace";
+}
+
+a:hover {
+	text-decoration: underline;
+    color: cyan; /* Color when hovered */
+}
+
+a:active {
+	text-decoration: underline;
+    color: yellow; /* Color when clicked */
+}
+
+a:visited {
+	text-decoration: underline;
+    color: pink; /* Color for visited links */
+}
+
+.typewriter {
+    overflow: hidden; 
+    border-right: .15em solid green; /* Cursor effect */
+    white-space: nowrap; /* Prevents line wrapping */
+    margin: 0 auto; 
+    letter-spacing: .15em; /* Spacing between characters */
+    animation: typing 3.5s steps(30, end), blink-caret .75s step-end infinite; /* Typewriter effect */
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: green; }
+}
+

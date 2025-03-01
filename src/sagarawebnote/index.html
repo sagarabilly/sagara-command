@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Loading...</title>
+	<link rel="stylesheet" href="index_style.css">
+  <style>
+    
+  </style>
+</head>
+<body>
+  <!-- You could change the background video here -->
+  <video class="bg-video" src="bg_vid.mp4" autoplay muted loop></video>
+
+  <!-- Overlay for Darkening -->
+  <div class="overlay"></div>
+
+  <!-- Optional: Neon Frame -->
+  <div class="frame"></div>
+
+  <!-- Animated Grid Lines -->
+  <div class="grid-vertical"></div>
+  <div class="grid-horizontal"></div>
+
+  <!-- Loading Text with Typewriter Effect -->
+  <div class="loading-text">Loading Web Note...</div>
+
+  <!-- Spinner Positioned at Bottom Left -->
+  <div class="spinner"></div>
+  
+  <!-- Redirect Script -->
+  <script>
+    // Redirect to guide.html after a short delay
+    setTimeout(function() {
+      window.location.href = 'jcontents.html'; // Adjust the path if necessary
+    }, 4000); // 3000 milliseconds = 3 seconds
+  </script>
+</body>
+</html>
+

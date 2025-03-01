@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Web Note</title>
+  
+  <!-- Additional Style -->
+  <style>
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .content {
+        width: 60%;
+        height: 100vh;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        overflow: hidden; 
+    }
+	
+	.content2 {
+        width: 40%;
+        height: 100%; 
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        overflow: hidden; 
+    }
+	
+    iframe {
+        width: 100%;
+        height: 100%;
+        border: none; 
+    }
+	
+    #html1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+		zoom: 120%;
+    }
+
+    #animation-container {
+        width: 80%;
+        max-width: 600px;
+    }
+	
+  </style>
+</head>
+<body>
+  
+    <div class="content" id="html2">
+        <iframe src="webnote.html" title="webnote"></iframe>
+    </div>
+	
+	<div class="content2" id="html1">
+		<iframe src="anim.html" title="animation"></iframe>
+	</div>
+</body>
+</html>
