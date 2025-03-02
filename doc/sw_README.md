@@ -3,8 +3,7 @@
 
 Sagara Wallpaper is a simple Python utility code that allows you to change your desktop wallpaper via the terminal.  
 With a fully customizable configuration file, you can define the directory where your wallpapers are stored and assign your own short and long command-line flags for each wallpaper category.  
-By this command, it is more easire to setup a Beautiful Terminal.  
-For Bueatiful Terminal guide, please see the beautiful_terminal_README.md   
+By this command, it is more easier to setup for a beautiful looking windows terminal by setting the background to match the current displayed wallpaper.  
 
 ## Features
 
