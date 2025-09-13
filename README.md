@@ -11,6 +11,7 @@ I use these commands quite often and are quite useful for both work or daily usa
 - **Sagara Rename (srename):** Quicky rename all the files based on a list or csv or text or even mimicking other folder.  
 - **Install Engine Setup (ies) [Still under development!]:** Automation powershell script to install and setup some programs automatically. 
 - **Sagara Webnote (webnote):** Displaying ypur markdown text note in a form of html with my pre-applied css design and deploy it locally (currently set to port 9995)
+- **Secure Deletion (sdl):** Securely deletes files and folders by overwriting their contents before removal. 
 
 ## Requirements  
 
