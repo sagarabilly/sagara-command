@@ -1,7 +1,7 @@
 
 # SDL – Secure Deletion
 
-`SDL` is a small Python-based tool (wrapped in `sdl.bat`) that securely deletes files and folders by overwriting their contents before removal. Similar to the `shred` command on Linux.
+`SDL` is a small Python-based tool (wrapped in `sdl.bat`) that securely deletes files and folders by overwriting their contents before removal.
 
 ## Usage
 
